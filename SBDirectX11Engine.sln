@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Editor_Windows", "Editor_Windows\Editor_Windows.vcxproj", "{03DA2C63-F4AC-40B9-94DC-47125B47D858}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SBEngine_SOURCE", "SBEngine_SOURCE\SBEngine_SOURCE.vcxitems", "{82E97C2B-EF0A-4351-BBEE-2360F5CDF152}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shaders_SOURCE", "Shaders_SOURCE\Shaders_SOURCE.vcxitems", "{C1B2D84A-2E95-4B1E-9CD0-380C714AD171}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03DA2C63-F4AC-40B9-94DC-47125B47D858}.Debug|x64.ActiveCfg = Debug|x64
+		{03DA2C63-F4AC-40B9-94DC-47125B47D858}.Debug|x64.Build.0 = Debug|x64
+		{03DA2C63-F4AC-40B9-94DC-47125B47D858}.Debug|x86.ActiveCfg = Debug|Win32
+		{03DA2C63-F4AC-40B9-94DC-47125B47D858}.Debug|x86.Build.0 = Debug|Win32
+		{03DA2C63-F4AC-40B9-94DC-47125B47D858}.Release|x64.ActiveCfg = Release|x64
+		{03DA2C63-F4AC-40B9-94DC-47125B47D858}.Release|x64.Build.0 = Release|x64
+		{03DA2C63-F4AC-40B9-94DC-47125B47D858}.Release|x86.ActiveCfg = Release|Win32
+		{03DA2C63-F4AC-40B9-94DC-47125B47D858}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCEF220B-066E-4299-AFBA-8560195BDE1A}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SBEngine_SOURCE\SBEngine_SOURCE.vcxitems*{03da2c63-f4ac-40b9-94dc-47125b47d858}*SharedItemsImports = 4
+		SBEngine_SOURCE\SBEngine_SOURCE.vcxitems*{82e97c2b-ef0a-4351-bbee-2360f5cdf152}*SharedItemsImports = 9
+		Shaders_SOURCE\Shaders_SOURCE.vcxitems*{c1b2d84a-2e95-4b1e-9cd0-380c714ad171}*SharedItemsImports = 9
+	EndGlobalSection
+EndGlobal

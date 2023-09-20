@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{82e97c2b-ef0a-4351-bbee-2360f5cdf152}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbCanvas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbConstantBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbEngine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbEnums.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbGameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbGraphics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbGraphicsDevice_DX11.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbLayer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbMesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbMeshRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbResources.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbSceneManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbShader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbTime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbTransform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbApplication.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbConstantBuffer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbEntity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbGameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbGraphicsDevice_DX11.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbInput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbLayer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbMath.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbMesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbMeshRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbResource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbResources.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbSceneManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbShader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbTime.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbTransform.cpp" />
+  </ItemGroup>
+</Project>
