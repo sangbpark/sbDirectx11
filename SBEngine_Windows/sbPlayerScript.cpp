@@ -26,7 +26,6 @@ namespace sb
 		Vector3 pos = tr->GetPosition();
 		pos.x -= 0.1f * Time::DeltaTime();
 		tr->SetPosition(pos);
-		pos = tr->GetPosition();
 	}
 
 	void PlayerScript::LateUpdate()
