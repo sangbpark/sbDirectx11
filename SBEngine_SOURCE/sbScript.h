@@ -1,21 +1,19 @@
 #pragma once
+#include "sbComponent.h"
 #include "sbEnums.h"
 #include "sbEntity.h"
 #include "sbMath.h"
 
 namespace sb
 {
-	using namespace enums;
-	using namespace math;
-
 	class GameObject;
-	class Component : public Entity
+	class Script : public Entity
 	{
 	public:
 		friend GameObject;
 
-		Component(COMPONENTTYPE type);
-		virtual ~Component();
+		Script();
+		virtual ~Script();
 
 		virtual void Initialize() = 0;
 		virtual void Update() = 0;
@@ -23,10 +21,9 @@ namespace sb
 		virtual void Render() = 0;
 
 		GameObject* GetOwner() { return mOwner; }
-		UINT GetUpdateOrder() { return (UINT)mType; }
+		void SetOwner(GameObject* obj) { mOwner = obj; }
 
 	private:
-		const COMPONENTTYPE mType;
 		GameObject* mOwner;
 	};
 }

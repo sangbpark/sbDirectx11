@@ -26,11 +26,11 @@ namespace sb
         }
     }
 
-    void Scene::FixedUpdate()
+    void Scene::LateUpdate()
     {
         for (Layer& layer : mLayers)
         {
-            layer.FixedUpdate();
+            layer.LateUpdate();
         }
     }
 

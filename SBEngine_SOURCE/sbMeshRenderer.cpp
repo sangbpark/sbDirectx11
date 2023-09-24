@@ -21,7 +21,7 @@ namespace sb
 	{
 	}
 
-	void MeshRenderer::FixedUpdate()
+	void MeshRenderer::LateUpdate()
 	{
 	}
 

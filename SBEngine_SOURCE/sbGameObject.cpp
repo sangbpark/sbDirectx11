@@ -14,12 +14,6 @@ namespace sb
 
 	}
 
-	void GameObject::AddComponent(Component* component)
-	{
-		int myOrder = component->GetUpdateOrder();
-		mComponents[myOrder] = component;
-		mComponents[myOrder]->mOwner = this;
-	}
 	void GameObject::Initialize()
 	{
 		for (Component* comp : mComponents)
@@ -28,6 +22,14 @@ namespace sb
 				continue;
 
 			comp->Initialize();
+		}
+
+		for (Script* script : mScripts)
+		{
+			if (script == nullptr)
+				continue;
+
+			script->Initialize();
 		}
 	}
 	void GameObject::Update()
@@ -39,17 +41,34 @@ namespace sb
 
 			comp->Update();
 		}
+
+		for (Script* script : mScripts)
+		{
+			if (script == nullptr)
+				continue;
+
+			script->Update();
+		}
 	}
-	void GameObject::FixedUpdate()
+	void GameObject::LateUpdate()
 	{
 		for (Component* comp : mComponents)
 		{
 			if (comp == nullptr)
 				continue;
 
-			comp->FixedUpdate();
+			comp->LateUpdate();
+		}
+
+		for (Script* script : mScripts)
+		{
+			if (script == nullptr)
+				continue;
+
+			script->LateUpdate();
 		}
 	}
+
 	void GameObject::Render()
 	{
 		for (Component* comp : mComponents)
@@ -58,6 +77,14 @@ namespace sb
 				continue;
 
 			comp->Render();
+		}
+
+		for (Script* script : mScripts)
+		{
+			if (script == nullptr)
+				continue;
+
+			script->Render();
 		}
 	}
 }

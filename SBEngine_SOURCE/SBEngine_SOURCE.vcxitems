@@ -35,6 +35,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)sbResources.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)sbScene.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)sbSceneManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbScript.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)sbShader.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)sbTime.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)sbTransform.h" />
@@ -56,6 +57,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)sbResources.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sbScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sbSceneManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbScript.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sbShader.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sbTime.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sbTransform.cpp" />

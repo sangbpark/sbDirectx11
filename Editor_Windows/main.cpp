@@ -3,11 +3,14 @@
 
 #include "framework.h"
 #include "Editor_Windows.h"
-#include "sbApplication.h"
+#include "..\\SBEngine_SOURCE\\\sbApplication.h"
+#include "..\\SBEngine_Windows\\sbLoadScene.h"
 
+//#ifdef  _DEBUG
 //#pragma comment(lib, "..\\x64\\Debug\\YamYamEngine_Windows.lib")
-//
-//#include "yaApplication.h"
+//#else
+//#pragma comment(lib, "..\\x64\\Release\\YamYamEngine_Windows.lib")
+//#endif 
 
 #define MAX_LOADSTRING 100
 
@@ -129,6 +132,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
     application.SetWindow(hWnd, 1600, 900);
     application.Initialize();
+    sb::InitializeScenes();
 
     return TRUE;
 }

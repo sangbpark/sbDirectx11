@@ -15,7 +15,7 @@ namespace sb
 
 		virtual void Initialize();
 		virtual void Update();
-		virtual void FixedUpdate();
+		virtual void LateUpdate();
 		virtual void Render();
 
 		Layer* GetLayer(UINT index) { return&mLayers[index]; }

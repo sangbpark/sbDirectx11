@@ -126,6 +126,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)sbCanvas.h">
       <Filter>Engine\System</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)sbScript.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)sbComponent.cpp">
@@ -184,6 +187,9 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)sbShader.cpp">
       <Filter>Engine\Resource\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)sbScript.cpp">
+      <Filter>Engine\Component</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

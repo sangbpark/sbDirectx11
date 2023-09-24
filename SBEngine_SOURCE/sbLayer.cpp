@@ -30,11 +30,11 @@ namespace sb
 		}
 	}
 
-	void Layer::FixedUpdate()
+	void Layer::LateUpdate()
 	{
 		for (GameObject* gameObject : mGameObjects)
 		{
-			gameObject->FixedUpdate();
+			gameObject->LateUpdate();
 		}
 	}
 

@@ -18,7 +18,8 @@ namespace sb
 	void Application::Run()
 	{
 		Update();
-		FixedUpdate();
+		
+		LateUpdate();
 		Render();
 	}
 
@@ -39,7 +40,7 @@ namespace sb
 		SceneManager::Update();
 	}
 
-	void Application::FixedUpdate()
+	void Application::LateUpdate()
 	{
 
 	}

@@ -23,7 +23,7 @@ namespace sb
 	{
 	}
 
-	void Transform::FixedUpdate()
+	void Transform::LateUpdate()
 	{
 	}
 
